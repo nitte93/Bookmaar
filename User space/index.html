@@ -1,0 +1,443 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BookMark</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery-ui-1.11.3.custom/jquery-ui.js"></script>
+		<script src="js/jquery.avgrund.js"></script>
+        <link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/avgrund.css">
+		<style>
+			
+		</style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class = "navbar navbar-inverse navbar-static-top">
+			<div class = "container">
+				<a class = "navbar-brand">BookMaar</a>
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li ><a href = "#" class="btn" id="createNewList">Create</a></li>
+						<li class= "dropdown">						   
+							<a href = "#" class="dropdown-toggle" data-toggle="dropdown">Nitesh<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a>Settings</a></li>
+									<li><a>Logout</a></li>
+								</ul>
+				        </li>
+						<li ><a href = "#">About</a></li>
+						<li ><a href = "#">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+		  <div class="row">
+			<form>
+				<div class="col-md-6  col-lg-8 col-lg-offset-2 col-md-offset-3">
+				  <div class="input-group">
+					<input type="text" class="form-control input-search" placeholder="Search">
+					<span class="input-group-btn">
+					  <button class="btn btn-search" type="button"><i class="glyphicon glyphicon-search"></i></button>
+					</span>
+				  </div><!-- /input-group -->
+				</div><!-- /.col-lg-6 -->
+		    </form>
+		  </div><!-- /.row -->
+		  
+		</div><!-- /.container -->		
+		<div class="container data-container">
+			<div class="row show-grid">
+				<div class="col-sm-3 "  >
+					<div class = "inner-container" style="background-color:rgb(255, 109, 63);">
+					<p class = "text-center list-header">Bookmark List 1</p>
+					<ul class="list-unstyled" id="bookmarklist1">
+						<li class=""  id="list1"  ><p class="text-left" id=""><a href="#" >1BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" id='reminder' aria-label="Left Align"  title="Set Reminder">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" id="delete" value="list1" class="btn btn-default btn-xs" aria-label="Left Align"  title="Delete this Bookmark">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align"  title="Mark this as Important">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true" ></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="col-sm-3 ">
+					<div class = "inner-container bg-warning" style="background-color:rgb(224,224,224);">
+					
+					<p class = "text-center list-header">Bookmark List 2</p>
+					<ul class="list-unstyled" id="bookmarklist2">
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+					</ul>
+					</div>
+				</div>
+				<div class="col-sm-3 ">
+					<div class = "inner-container bg-danger" style="background-color:rgb(255, 155, 0);">
+
+					<p class = "text-center list-header">Bookmark List 3</p>
+					<ul class="list-unstyled" id="bookmarklist3">
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+					</ul>
+				    </div>
+				</div>
+				<div class="col-sm-3 ">
+					<div class = "inner-container bg-primary" style="background-color:rgb(255, 218, 0);">
+					<p class = "text-center list-header">Bookmark List 4</p>
+					<ul class="list-unstyled" id="bookmarklist4">
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+					</ul>
+				    </div>
+				</div>
+				<div class="col-sm-3 ">
+					<div class = "inner-container bg-info" background-color:rgb(184, 196, 201);>
+					<p class = "text-center list-header">Bookmark List 5</p>
+					<ul class="list-unstyled" id="bookmarklist5">
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+					</ul>
+					</div>
+				</div>
+				<div class="col-sm-3 ">
+					<div class = "inner-container bg-warning" style="rgb(63, 195, 255);">
+					<p class = "text-center list-header">Bookmark List 6</p>
+					<ul class="list-unstyled" id="bookmarklist6">
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+						<li class=""><p class="text-left"><a href="#">BookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMarkBookMark</a></p> 
+							<div class="btn-toolbar button-set" role="toolbar" aria-label="...">
+							  <div class="btn-group" role="group" aria-label="...">
+								<button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+								  <span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span>
+								</button>
+							  
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-remove" aria-hidden="true"></span>
+									</button>
+								  <button type="button" class="btn btn-default btn-xs" aria-label="Left Align">
+									  <span class="glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+									</button>
+							  </div>
+							</div>
+						</li>
+					</ul>
+					</div>
+				</div>
+	
+			</div>
+        </div>	 
+        <div class = "navbar navbar-default navbar-fixed-bottom">
+			<div class = "container">
+				<p class = "navbar-text">BookMark</p>
+			    <a class = "navbar-btn btn btn-danger pull-right" data-toggle="tooltip" data-placement="top" title="tooltip on top">Subscribe</a> 
+			</div>
+		</div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+        	$(document).ready(function(){
+        				$('#reminder').avgrund({
+							height: 200,
+							holderClass: 'custom',
+							showClose: true,
+							showCloseText: 'close',
+							onBlurContainer: '.container',
+							template: "<form class='' style='background:red;'>"+ 
+										"<div class='form-group'>"+
+        				  				"<label  for='time' class='col-sm-3 control-label'>Reminder:</label>"+
+        				       			"<div class='col-sm-9'>"+
+        				      			"<input  type='date' value=''  id='time' name='time' class='form-control' >"+
+        					           "</div>"+  
+        			                   "</div>"+
+        			                   "<div class='form-group' style='margin-top:50px;'>"+
+        			    			   "<div class='col-sm-offset-3 col-sm-7' style='margin-top:30px;'>"+
+        			                   "<button type='submit' name='submit'  id='submit' class='btn btn-danger btn-md'>Set Reminder</button>"+
+        			      
+        			                   "</div>"+
+        			                   "</div>"+	
+        			                   "</form>"
+						});
+								            			               
+	    });
+        </script>
+    </body>
+</html>

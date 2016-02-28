@@ -1,0 +1,106 @@
+.data-container{
+margin-top:30px;}
+.col-sm-3{
+padding:5px;
+}
+.inner-container{
+  width:100%;
+  height:100%;
+}
+.button-set{
+visibility:hidden;
+display:inline;
+float:right;
+clear:both;
+position:absolute;
+right:0;
+top:0;
+}
+.inner-container ul{
+}
+.inner-container ul li{
+cursor:pointer;
+display:block;
+overflow:hidden;
+width:98%;
+position:relative;
+}
+.inner-container ul li p{
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+color: rgba(0,0,0,0.8);
+font-family: 'Roboto Slab','Times New Roman',serif;
+outline: none;
+white-space: pre-wrap;
+padding-left: 10px;
+padding-right: 15px;
+font-size: 14px;
+}
+.inner-container ul li p a{
+color: rgba(0,0,0,0.8);
+}
+.inner-container  {
+curser:pointer;
+}
+.inner-container li:hover  .button-set{
+ visibility:visible; 
+}
+.list-header{
+ font-family: 'Roboto Condensed','Droid Sans',arial,sans-serif;
+ font-size: 17px;
+ font-weight: bold;
+ line-height: 23px;
+ min-height: 38px;
+ padding: 15px 15px 15px 15px;
+}
+.btn-search {
+	background-color: #666;
+    color: #fff;
+    border-radius:0;
+    border-color:#666;
+}
+  
+.input-search {
+	border-radius:0;
+    background-color: #eee;
+    box-shadow: none;
+    border: none;
+  	border-right: 1px solid #eee;
+}
+
+.input-search:focus {
+	box-shadow: none;
+}
+
+.deleteRow{
+         -webkit-animation: delete 1.5s;
+}
+/* ON deleting the rows*/
+/*.deleteRow{
+border:1px solid #FFF;
+font-size:20px;
+}
+*/
+@-webkit-keyframes delete {
+ 0% { left:-100px; top:0px; }
+ 25% { left:-200px; top:0px; }
+ 50% { left:-300px; top:0px; }
+ 75% { left:-400px; top:0px; }
+ 100% { left:-1500px; top:0px; height:0;}
+
+ .newList{
+         -webkit-animation: newList1 5s;
+}
+/* ON deleting the rows*/
+/*.deleteRow{
+border:1px solid #FFF;
+font-size:20px;
+}
+*/
+@-webkit-keyframes newList1 {
+ 0% { background:red; top:0px; height:0%; }
+ 25% {  top:0px; right:20px; height:20%; }
+ 50% { left:-20px; top:0px; height:4%;}
+ 75% {  top:0px; right:20px; height:60%;}
+ 100% { left:-20px; top:0px; height:100%;}
+}}
